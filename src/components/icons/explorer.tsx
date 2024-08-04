@@ -1,6 +1,6 @@
 import React from "react";
 
-const Explorer = () => {
+const ExplorerIcon = () => {
   return (
     <div className="">
       <svg
@@ -23,4 +23,4 @@ const Explorer = () => {
   );
 };
 
-export default Explorer;
+export default ExplorerIcon;

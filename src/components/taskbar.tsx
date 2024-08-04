@@ -1,10 +1,12 @@
 import React from "react";
 import Icon from "./icons/icon";
-import Explorer from "./icons/explorer";
+import ExplorerIcon from "./icons/explorer";
 import Setting from "./icons/setting";
 import Mail from "./icons/mail";
+import { useAppContext } from "../AppContext";
 
 const Taskbar = () => {
+  const { toggleDiv1, toggleDiv2 } = useAppContext();
   return (
     <div>
       <div className="glass h-[52px] p-2 flex gap-3 items-end">
@@ -16,7 +18,9 @@ const Taskbar = () => {
             placeholder="Search..."
           />
         </div>
-        <Explorer />
+        <button onClick={toggleDiv1}>
+          <ExplorerIcon />
+        </button>
         <Setting />
         <Mail />
       </div>
