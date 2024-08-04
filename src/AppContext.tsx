@@ -22,7 +22,7 @@ interface AppProviderProps {
 }
 
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
-  const [showDiv1, setShowDiv1] = useState(false);
+  const [showDiv1, setShowDiv1] = useState(true);
   const [showDiv2, setShowDiv2] = useState(false);
 
   const toggleDiv1 = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "./icons/icon";
-import ExplorerIcon from "./icons/explorer";
+import { ExplorerIcon } from "./icons/explorer";
 import Setting from "./icons/setting";
 import Mail from "./icons/mail";
 import { useAppContext } from "../AppContext";
