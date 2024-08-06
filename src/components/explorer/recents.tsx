@@ -14,14 +14,10 @@ const Recents: React.FC<RecentsProps> = ({ className }) => {
         </div>
         <div className="p-4">
           <div className={className}>
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
-            <ExplorerIconStaticBig title={"my portfolio"} />
+            <ExplorerIconStaticBig title={"Portfolio"} />
+            <ExplorerIconStaticBig title={"My Fav Work"} />
+            <ExplorerIconStaticBig title={"My Game"} />
+            <ExplorerIconStaticBig title={"Image Gallery"} />
           </div>
         </div>
       </div>

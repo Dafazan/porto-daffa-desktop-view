@@ -6,7 +6,7 @@ import Mail from "./icons/mail";
 import { useAppContext } from "../AppContext";
 
 const Taskbar = () => {
-  const { toggleDiv1, toggleDiv2 } = useAppContext();
+  const { toggleDiv1, toggleMail } = useAppContext();
   return (
     <div>
       <div className="glass h-[52px] p-2 flex gap-3 items-end">
@@ -22,7 +22,9 @@ const Taskbar = () => {
           <ExplorerIcon />
         </button>
         <Setting />
-        <Mail />
+        <button onClick={toggleMail}>
+          <Mail />
+        </button>
       </div>
     </div>
   );
