@@ -13,7 +13,7 @@ const App: React.FC = () => {
           <img
             src="/wall.jpg"
             alt="wallpaper"
-            className="w-full h-full absolute"
+            className=" h-full w-full absolute object-center object-cover"
           />
           <div className="absolute w-full h-full">
             <Router>

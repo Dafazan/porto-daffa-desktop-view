@@ -26,7 +26,7 @@ interface AppProviderProps {
 }
 
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
-  const [showDiv1, setShowDiv1] = useState(true);
+  const [showDiv1, setShowDiv1] = useState(false);
   const [showMail, setShowMail] = useState(false);
   const [topFile, setTopFile] = useState(false);
   const [topMail, setTopMail] = useState(false);
