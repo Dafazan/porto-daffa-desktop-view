@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAppContext } from "../AppContext";
-import Fileexplor from "../components/explorer/fileexplor";
-import Mailer from "../components/explorer/mailer";
+import Fileexplor from "../components/tabs/fileexplor";
+import Mailer from "../components/tabs/mailer";
 
 const Explorer: React.FC = () => {
   const { showDiv1, showMail, topFile, topMail } = useAppContext();
@@ -13,7 +13,7 @@ const Explorer: React.FC = () => {
   };
 
   return (
-    <div className="relative bg-white">
+    <div className="relative ">
       {showDiv1 && (
         <div
           className={`absolute w-screen h-screen pointer-events-none ${
