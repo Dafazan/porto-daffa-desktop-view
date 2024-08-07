@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Explorer from "./pages/explorer";
 import Taskbar from "./components/taskbar";
 import { AppProvider } from "./AppContext";
+import DesktopIcon from "./components/desktopicon";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,9 @@ const App: React.FC = () => {
             className=" h-full w-full absolute object-center object-cover"
           />
           <div className="absolute w-full h-full">
+            <DesktopIcon />
+          </div>
+          <div className="absolute w-full h-full pointer-events-none">
             <Router>
               <Routes>
                 <Route path="/" element={<Explorer />} />
