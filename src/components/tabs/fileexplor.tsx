@@ -17,7 +17,7 @@ const Fileexplor = () => {
   const togglefull = () => {
     setFullwindow((prev) => !prev);
   };
-  const { toggleDiv1 } = useAppContext();
+  const { toggleDiv1, hideDiv1, toggleHideDiv1 } = useAppContext();
   return (
     <Draggable
       disabled={fullwindow === true ? true : false}
@@ -30,7 +30,8 @@ const Fileexplor = () => {
           fullwindow === true
             ? "w-screen h-screen"
             : "w-[600px] rounded-md overflow-hidden"
-        } rounded-md  flex flex-col duration-200 pointer-events-auto`}
+        } ${hideDiv1 === true ? "hidden" : "block"}
+        rounded-md  flex flex-col duration-200 pointer-events-auto`}
       >
         <div className="w-full h-8 flex justify-between items-center bg-white">
           <div>
@@ -49,7 +50,9 @@ const Fileexplor = () => {
                 alt="v"
               />
             </div>
-            <div className="shadow-box-button px-2">-</div>
+            <button onClick={toggleHideDiv1} className="shadow-box-button px-2">
+              -
+            </button>
             <div
               onClick={toggleDiv1}
               className="rounded-e-md bg-red-500 px-2 flex justify-center items-center"

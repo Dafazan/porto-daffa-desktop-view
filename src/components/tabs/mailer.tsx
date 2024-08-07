@@ -15,7 +15,7 @@ const Mailer = () => {
   const togglefull = () => {
     setFullwindow((prev) => !prev);
   };
-  const { toggleMail } = useAppContext();
+  const { toggleMail, toggleHideMail, hideMail } = useAppContext();
   return (
     <Draggable
       disabled={fullwindow === true ? true : false}
@@ -28,6 +28,8 @@ const Mailer = () => {
           fullwindow === true
             ? "w-screen h-screen"
             : "w-[600px] rounded-md overflow-hidden"
+        } ${
+          hideMail === true ? "hidden" : "block"
         } rounded-md  flex flex-col duration-200 pointer-events-auto`}
       >
         <div className="w-full h-8 flex justify-between items-center bg-white">
@@ -47,7 +49,9 @@ const Mailer = () => {
                 alt="v"
               />
             </div>
-            <div className="shadow-box-button px-2">-</div>
+            <button onClick={toggleHideMail} className="shadow-box-button px-2">
+              -
+            </button>
             <div
               onClick={toggleMail}
               className="rounded-e-md bg-red-500 px-2 flex justify-center items-center"
