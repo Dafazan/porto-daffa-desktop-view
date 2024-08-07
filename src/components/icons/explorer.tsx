@@ -72,4 +72,36 @@ const ExplorerIconStaticBig: React.FC<Interfaces> = ({ title }) => {
     </div>
   );
 };
-export { ExplorerIcon, ExplorerIconStatic, ExplorerIconStaticBig };
+
+const ExplorerIconStaticBigW: React.FC<Interfaces> = ({ title }) => {
+  return (
+    <div className=" flex flex-col items-center text-blue-800">
+      <svg
+        width="71"
+        height="62"
+        viewBox="0 0 71 62"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 6.99507V20.6355C0 15.4591 3.32266 12.0665 7.16995 12.0665L38.6478 11.8916C37.827 11.258 37.0067 10.5912 36.4777 9.69933C35.8425 8.62849 35.5 7.39859 35.5 6.1347C35.5 2.7466 32.7534 0 29.3653 0H6.99507C3.1318 0 0 3.1318 0 6.99507Z"
+          fill="#789FEF"
+        />
+        <path
+          d="M0 19.2355C0 15.179 3.28839 11.8906 7.34483 11.8906H63.6552C67.7116 11.8906 71 15.179 71 19.2355V53.8611C71 57.9175 67.7116 61.2059 63.6552 61.2059H7.34483C3.28839 61.2059 0 57.9175 0 53.8611V19.2355Z"
+          fill="#1B40CC"
+        />
+      </svg>
+
+      <h2 className="font-medium text-white text-xs break-all line-clamp-1">
+        {title}
+      </h2>
+    </div>
+  );
+};
+export {
+  ExplorerIcon,
+  ExplorerIconStatic,
+  ExplorerIconStaticBig,
+  ExplorerIconStaticBigW,
+};
