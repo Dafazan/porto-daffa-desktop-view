@@ -65,7 +65,7 @@ const Fileexplor = () => {
         <div className="flex">
           <div className="flex flex-col ">
             <div className="bg-blue-300 w-full px-2 text-white font-semibold">
-              <p>HOME</p>
+              <p>My Computer</p>
             </div>
             <div
               className={`${
