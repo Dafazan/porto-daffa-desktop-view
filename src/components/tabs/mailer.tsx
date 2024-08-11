@@ -64,7 +64,7 @@ const Mailer = () => {
         <div className="flex">
           <div className="flex flex-col ">
             <div className="bg-blue-300 w-full px-2 text-white font-semibold">
-              <p>Sent New Mail</p>
+              <p>My Mail</p>
             </div>
             <div
               className={`${
@@ -72,7 +72,8 @@ const Mailer = () => {
               } glass-sidebar duration-200 w-[170px] text-white px-2 py-4`}
             >
               <div className="flex flex-col gap-1 text-start items-start">
-                <p>Dummy Mails</p>
+                <button>Compose</button>
+                <button>Inbox</button>
               </div>
             </div>
           </div>
